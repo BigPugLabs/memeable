@@ -32,38 +32,38 @@ header > h2 {
 
 header > h4 {
     font-family: 'Inter', sans-serif;
-    font-weight: 500;
     font-size: 0.75rem;
+    font-weight: 500;
+}
+
+main {
+    padding: 36px;
 }
 
 form {
-    padding: 36px;
     display: grid;
-    grid-column: 1fr 1fr;
-    grid-row: auto auto;
     gap: 17px 15px;
+    grid-template: auto auto / 1fr 1fr;
 }
 
 form input {
-    grid-column: 1;
-    height: 35px;
-    padding: 0px 10px;
-    font-size: 0.75rem;
+    border-radius: 5px;
+    border: 1px solid #D5D4D8;
     color: #0D0D0D;
-}
-
-form input+input {
-    grid-column: 2;
+    font-size: 0.75rem;
+    height: 35px;
+    text-indent: 5px;
 }
 
 form button {
-    grid-column: span 2;
-    height: 40px;
-    font-family: 'Karla', sans-serif;
-    font-size: 1rem;
-    font-weight: 700;
-    color: #FFF;
     background: linear-gradient(90.41deg, #711F8D 1.14%, #A818DA 100%);
     border-radius: 5px;
     border: none;
+    color: #FFF;
+    cursor: pointer;
+    font-family: 'Karla', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    grid-column: 1 / -1;
+    height: 40px;
 }
