@@ -1,11 +1,12 @@
 * {
     margin: 0;
+    box-sizing: border-box;
 }
 
-#root {
-    /*color: #FFF;*/
-    /*font-family: 'Inter', sans-serif;*/
+body {
+    color: #FFF;
     font-family: 'Karla', sans-serif;
+    margin: 0;
 }
 
 header {
@@ -23,14 +24,46 @@ header > img {
     width: 32px;
 }
 
-header > h1 {
+header > h2 {
     flex: 2 1 auto;
-    font-size: 24px;
+    font-size: 1.25rem;
     letter-spacing: -0.05em;
 }
 
-header > h3 {
+header > h4 {
     font-family: 'Inter', sans-serif;
     font-weight: 500;
-    font-size: 12px;
+    font-size: 0.75rem;
+}
+
+form {
+    padding: 36px;
+    display: grid;
+    grid-column: 1fr 1fr;
+    grid-row: auto auto;
+    gap: 17px 15px;
+}
+
+form input {
+    grid-column: 1;
+    height: 35px;
+    padding: 0px 10px;
+    font-size: 0.75rem;
+    color: #0D0D0D;
+}
+
+form input+input {
+    grid-column: 2;
+}
+
+form button {
+    grid-column: span 2;
+    height: 40px;
+    font-family: 'Karla', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #FFF;
+    background: linear-gradient(90.41deg, #711F8D 1.14%, #A818DA 100%);
+    border-radius: 5px;
+    border: none;
 }

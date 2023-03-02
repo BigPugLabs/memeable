@@ -4,8 +4,8 @@ export function Header() {
     return (
         <header>
             <img src={logo} alt="Pug logo" />
-            <h1>Memeable</h1>
-            <h3>Pug meme generator</h3>
+            <h2>Memeable</h2>
+            <h4>Pug meme generator</h4>
         </header>
     )
 }
