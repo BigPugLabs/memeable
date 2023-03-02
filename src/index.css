@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+}
+
+#root {
+    /*color: #FFF;*/
+    /*font-family: 'Inter', sans-serif;*/
+    font-family: 'Karla', sans-serif;
+}
+
+header {
+    align-items: center;
+    background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
+    display: flex;
+    gap: 6px;
+    height: 65px;
+    justify-content: space-between;
+    padding: 0px 56px 0px 20px;
+}
+
+header > img {
+    height: 32px;
+    width: 32px;
+}
+
+header > h1 {
+    flex: 2 1 auto;
+    font-size: 24px;
+    letter-spacing: -0.05em;
+}
+
+header > h3 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+}
