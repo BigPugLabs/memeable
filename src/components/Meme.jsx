@@ -8,10 +8,10 @@ export function Meme() {
         randomImage: "http://i.imgflip.com/1bij.jpg"
     })
     const [allMemeImages, setAllMemeImages] = useState(memesData)
-    
+
     function handleChange(event) {
-        const {name, value} = event.target
-        setMeme(prev=>({...prev, [name]: value}))
+        const { name, value } = event.target
+        setMeme(prev => ({ ...prev, [name]: value }))
     }
 
     function buttonClickHandler() {
@@ -26,7 +26,7 @@ export function Meme() {
         <main>
             <div className="form">
                 <input type="text" name="topText" placeholder="Shut up" onChange={handleChange} />
-                <input type="text" name="bottomText" placeholder="and take my money!" onChange={handleChange}/>
+                <input type="text" name="bottomText" placeholder="and take my money!" onChange={handleChange} />
                 <button onClick={buttonClickHandler} type="submit">Get a new meme image 🖼</button>
             </div>
             <div className="meme">
